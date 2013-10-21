@@ -1,0 +1,185 @@
+/* 
+Project Name: Civic Beat Press
+Author: Yunqian Wang
+*/
+
+/******************************************
+/* SETUP                   
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+     clear: both;
+}
+
+.alignright {
+     float: right; 
+     padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+     float: left; 
+     padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+/******************************************
+/* General        
+/*******************************************/
+
+body {
+     font-family: "Linux Libertine",Times, serif;
+     font-size: 16px;
+     line-height: 1.5;
+     color: #414042;
+     font-weight: 500;
+     background:url(../images/brick.png);
+     background-repeat:repeat;
+
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin: 0.83em 0;
+}
+
+h3 {
+  font-size: 1.17em;
+  margin: 1em 0;
+}
+
+p{
+     margin:0,0,15px,0;
+
+}
+/******************************************
+/* HEADER             
+/*******************************************/
+
+
+h1{
+     background:url(../images/TheCivicBeatPress.png) no-repeat;
+     width:600px;
+     height:60px;
+     text-align: center;
+     text-indent: -9999em;
+     margin: 22.5px 45px;
+
+}
+
+
+
+/******************************************
+/* LAYOUT                   
+/*******************************************/
+
+#wrapper{
+     background:url(../images/brickblue.png) repeat-x;
+     width:1280px;
+     height:63px;
+}
+
+
+/* Center the container */
+#container {
+	width: 1280px;
+	margin: auto 22.25px;
+}
+
+header {
+
+}
+
+footer {
+
+}
+
+
+/*****************************/         
+/*  NAVIGATION     *
+/*****************************/   
+
+nav ul li{
+     float:left;
+     margin-right:20px;
+}
+
+nav li li a {
+          display: block;
+          height:49px;
+          color:#ccc;
+          padding:50px 50px;
+          font-size:30px;
+     
+     }
+
+
+/*******
+
+***********************************
+/* SOCIAL MEDIA      
+/*******************************************/
+#social-media{
+     float:right;
+         
+}
+
+#social-media ul li{
+     float:left;
+     background:url(../images/socialNav1.png);
+     margin:3px;
+     text-indent:100%;
+     white-space:nowrap;
+     overflow: hidden;
+}
+
+#social-media ul li a {
+     display:block;
+     width: 45px;
+     height:59px;
+}
+
+#social-media ul li.tumblr{
+     background-position:0px 59px;
+}
+
+#social-media ul li.facebook{
+     background-position:-60px 59px;
+}
+
+#social-media ul li.rss{
+     background-position:-118px 59px;
+}
+
+#social-media ul li.tumblr:hover{
+     background-position:0px 0px;
+}
+
+#social-media ul li.facebook:hover{
+     background-position:-60px 0px;
+}
+
+#social-media ul li.rss:hover{
+     background-position:-118px 0px;
+}
+
+
