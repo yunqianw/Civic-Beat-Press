@@ -101,8 +101,6 @@ h1{
 
 /* Center the container */
 #container {
-	width: 1280px;
-	margin: auto 22.25px;
 	width: 960px;
 	margin: 0px auto;
 }
