@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -12,28 +13,30 @@
 		<!--[if lt IE 9]><script src="//ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script><![endif]-->
     <!--[if IE]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+        <script src="js/countdown.js"></script>
+
 	</head>
 
 	<body>
 
 		<div id="wrapper">
 
-		<div id="container">
-
-		
+        <div id="out-container">
 
 			<header>
 
 				<!--Begin #mainMenu -->
 				<nav>
                 	<ul>
-                    	<li><a href="CivicBeat"><a href="http://thecivicbeat.com/">Civic Beat</a></li>
-                     	<li><a href="CivivBeatPress"><a href="">Civic Beat Press</a></li>
+                    	<li><a href="http://thecivicbeat.com/">Civic Beat</a></li>
+                     	<li><a href="">Civic Beat Press</a></li>
+                        <li><a href="">Our Team</a></li>
+                        <li><a href="">Contact Us</a></li>
              	 	</ul>
              	</nav>
-             	<!--END #mainMenu -->
-            	
-				</header>
+             	<!--END #mainMenu -->	
+			</header>
+
 				<div class="clear"></div>
 
 			<!--BEGIN.content-->
@@ -42,24 +45,17 @@
 				<h1><a href="#">Civic Beat Press</a></h1>
 
 
-
-		    <!--BEGIN.#socialMedia-->
-		    <div id="social-media">
-				<ul>
-					<li class="tumblr"><a href="#">Tumblr</a></li>
-                	<li class="facebook"><a href="#">Facebook</a></li>
-                	<li class="rss"><a href="#">RSS</a></li>
-            	</ul>
-         	</div>	
-         	<!--END #socialMedia-->
-
-         	<div class="kickstarterbanner">
-         		<a href=""><img src="images/picbook.jpg" alt="picbook"/></a>
+         	<div class="kickstarvideo">
+                <iframe width="640" height="480" src="http://www.kickstarter.com/projects/845319788/ignite-the-schwa-fire/widget/video.html" frameborder="0" scrolling="no"> </iframe>
          	</div>
 
          	<!--END  kickstarterbanner-->
 
          	<!--BEGIN #blurb-->
+             <script>
+            var myCountdown1 = new Countdown({time:316});
+            </script>
+
          	<div id="blurb">
          		<p>
          		We have already finished the book and are currently beta-testing and revising the story and graphics with the help of family, friends, and their children. Through Kickstarter, we hope to raise the much needed funds to fully implement, launch, and maintain the website!
@@ -68,32 +64,81 @@
          	<!--END #blurb-->
 
          	<!--BEGIN #homeBoxes-->
-         	<div id="home-boxes">
-         		<div class="home-box">
+
+            <div class="container">
+
+         	<div id="home-box1">
+         		
          			<h2> Learn Chinese the Meme Way</h2>
-         			<p>Learn Chinese the Meme Way is an invitation to learn about contemporary Chinese language, society and politics through the lens of the country's lively and thriving internet culture. Peer into the worlds of Sina Weibo, Douban, Renren and other social networks to discover the puns, photos and odd assortment of animals battling for free expression on the internet. From the secret dwelling places of the Grass Mud Horse to the flying pigs of Shanghai's Huangpu river, the Chinese internet is rich with creative expression.</p>
-         		</div>
+                    <img src="images/niubi.jpg" alt="bookcover" class="alignleft" >
+         			<p>Learn Chinese theMeme Way is an invitation to learn about contemporary Chinese language, society and politics through the lens of the country's lively and thriving internet culture. Peer into the worlds of Sina Weibo, Douban, Renren and other social networks to discover the puns, photos and odd assortment of animals battling for free expression on the internet. From the secret dwelling places of the Grass Mud Horse to the flying pigs of Shanghai's Huangpu river, the Chinese internet is rich with creative expression.</p>
+         	</div>
+            </div>
 
-         		<div class="home-box">
+             <div class="container">
+
+             <div id="home-box2">
+         		
          			<h2>Meet our Makers</h2>
-         		</div>
 
-         		<div class="home-box">
-         			<h2>Media Exposure</h2>
+                    <p>Jason Li, Co-Founder
+
+                    Jason is a Hong Kong-based designer, illustrator and consultant. He has helped multinationals (IBM, Intel, Skype) and investment funds to tell more compelling stories and to understand their customers better. He was recently creative director of 3D Avatar School where he grew the company to 20+ employees and 100+ customers. Jason holds papers and patents on human computer interaction and his illustration works have appeared on the BBC. He graduated in engineering and education from Brown University.</p>
+
+                    <p>An Xiao Mina, Co-Founder
+
+                    Dubbing memes the “street art of the internet”, An looks at the growing role of internet culture and humor in addressing social and political issues in regions such as East and Southeast Asia, East Africa and North America. She first began writing about this topic on Hyperallergic, the Brooklyn-based art blogazine, and she has contributed to publications such as The Atlantic, Al Jazeera and Wired. She has spoken at forums like ROFLCon, the Personal Democracy Forum and the Microsoft Social Computing Symposium, and she will be presenting this June at TEDGlobal 2013. She travels a lot and thinks chickens are pretty funny.</p>
+
+                    <p>lida Shao, Director of Community Relations
+
+                    Lida Shao is an active community member, political praxistioner, and culture crafter — recently helping to start a successful Community Supported Kitchen in her neighborhood and a productive mini-farm in Queens, NY, while exploring filmmaking, tasty foods, Diaspora, urban cities, and rural landscapes worldwide.</p>
+
          		</div>
+                </div>
+
+
+                <div class="container">
+
+         		<div id="home-box3">
+         			<h2>Media Exposure</h2>
+
+                    <p>We do have a bias and a point of view. More often than not, we side with underrepresented people and groups rather than with those who have access to structures of power. We’re proponents of internet freedom and open source, Creative Commons initiatives. We support gay marriage and women’s rights but think there’s a great deal more to be done to promote social, economic and political equality. Our writers and researchers come from different backgrounds and cultures, but we strive as much as possible to represent all sides equally, so long as those sides are backed by research and not hate or misrepresentation.
+
+                    But most of all, we believe that humor, joy and creativity are a valid and necessary form of civic expression. The world can be a serious place, but we shouldn’t overlook the power of humor and creative expression in igniting a discussion or changing a person’s mind or simply helping us get through a difficult situation.
+
+                    </p>
+         		</div>
+                </div>
+
+
+            
          	<!-- END #homeBoxes-->
 
-         	<div class="clear"></div>
-         	</div><!--END.content-->
-         	</div>
+            <!--BEGIN.#socialMedia-->
 
+            <aside id="sidebar1"> 
+
+            <div id="social-media">
+                <ul>
+                    <li class="tumblr"><a href="#">Tumblr</a></li>
+                    <li class="facebook"><a href="#">Facebook</a></li>
+                    <li class="rss"><a href="#">RSS</a></li>
+                </ul>
+            </div>  
+
+            </aside>
+            <!--END #socialMedia-->
+
+         	<div class="clear"></div>
+
+         	</div><!--END.content-->
+         	</div><!-- #out-container --> 
 
 
 
      		<footer>
 				&copy; Footer Goes Here
 			</footer>
-		</div><!-- #container --> 
 		</div><!--#wrapper -->
 	</body>
 </html>

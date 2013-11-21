@@ -15,6 +15,7 @@ Author: Yunqian Wang
 }
 
 /* Clear fix hack */
+
 .clearfix:after {
      content: ".";
      display: block;
@@ -44,18 +45,30 @@ Author: Yunqian Wang
 body {
      font-family: "Linux Libertine",Times, serif;
      font-size: 16px;
-     line-height: 1.5;
      color: #414042;
-     font-weight: 500;
      background:url(../images/brick.png);
      background-repeat:repeat;
+}
+
+a {
+     text-decoration:none;
+     color:#1FA2E1;
+}
+
+     a:hover {
+          text-decoration:underline;
+     }
+
+
+
+h1{
+     background:url(../images/TheCivicBeatPress.png) no-repeat;
+     margin-top: 50px;
+     text-align: center;
+     text-indent: -9999em;
 
 }
 
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
-}
 
 h2 {
   font-size: 1.5em;
@@ -68,7 +81,7 @@ h3 {
 }
 
 p{
-     margin:0,0,15px,0;
+  margin:0,0,15px,0;
 
 }
 /******************************************
@@ -76,38 +89,79 @@ p{
 /*******************************************/
 
 
-h1{
-     background:url(../images/TheCivicBeatPress.png) no-repeat;
-     width:600px;
-     height:60px;
-     text-align: center;
-     text-indent: -9999em;
-     margin: 22.5px 45px;
-
-}
-
 
 
 /******************************************
 /* LAYOUT                   
 /*******************************************/
 
-#wrapper{
-     background:url(../images/brickblue.png) repeat-x;
-     width:1280px;
-     height:63px;
+#wrapper {
+
+     background:url(../images/bg_wrapper.png) repeat-x;
 }
+
 
 
 /* Center the container */
-#container {
+
+
+#out-container{
+     margin:0 auto;
+     width:960px;
+     
+
+     /*width:100%;
+     margin:500px,auto;*/
+}
+
+.container {
+     margin: 0 auto;
 	width: 960px;
-	margin: 0px auto;
+     background-color:white;
 }
 
-header {
+
+
+#home-box1{
+
+     width:960px;
+     margin:0px auto;
+     background-color:black;
+    
+}
+
+#home-box1.img {
+     min-width: 100%;
+     max-height:auto;
 
 }
+
+#home-box2{
+
+     width:960px;
+     margin:0px auto;
+     background-color:purple;
+    
+}
+
+
+#home-box3{
+
+     width:960px;
+     margin:0px auto;
+     background-color:red;
+    
+}
+
+#sidebar1{
+     width:200px;
+     float:right;
+     background-color:white;
+     color: #000;
+     margin-left: 10px;
+}
+
+
 
 footer {
 
@@ -120,17 +174,24 @@ footer {
 
 nav ul li{
      float:left;
-     margin-right:20px;
+     margin-right: 10px;
 }
 
-nav li li a {
+nav ul li a {
           display: block;
           height:49px;
           color:#ccc;
-          padding:50px 50px;
-          font-size:30px;
+          padding:36px 18px 0 18px;
+          font-size:17px;
      
      }
+
+nav ul li a:hover {
+          text-decoration:none;
+          background:url(../images/bg_nav_rollover.png) repeat-x;
+          color:#96DDFC;
+     }
+
 
 
 /*******
