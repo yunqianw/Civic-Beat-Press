@@ -1,27 +1,27 @@
 
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-    	<meta charset="utf-8">
-    	<meta name="description" content="Your description goes here">
-    	<meta name="keywords" content="one, two, three">
-		<title>Civc Beat Press</title>
+<head>
+<meta charset="utf-8">
+<meta name="Civic Beat Press" content="Kickstarter Campaign for CivicBeat">
+<title>Civc Beat Press</title>
 		
 		<!-- external CSS link -->
-		<link rel="stylesheet" href="css/normalize.css">
-		<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/reset.css">
+        <!--<link rel="stylesheet" href="css/normalize.css">-->
+<link rel="stylesheet" href="css/style.css">
 		<!--[if lt IE 9]><script src="//ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script><![endif]-->
     <!--[if IE]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
-        <script src="js/countdown.js"></script>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="js/countdown.js"></script>
+<script src="js/press.js"></script>
+<script src="js/jquery.stellar.min.js"></script>
+<script src="js/waypoints.min.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
 
-	</head>
+</head>
 
 	<body>
-
-		<div id="wrapper">
-
-        <div id="out-container">
 
 			<header>
 
@@ -29,11 +29,14 @@
 				<nav>
                 	<ul>
                     	<li><a href="http://thecivicbeat.com/">Civic Beat</a></li>
-                     	<li><a href="">Civic Beat Press</a></li>
+                     	<li><a href="">Learn Chinese The Meme Way</a></li>
                         <li><a href="">Our Team</a></li>
-                        <li><a href="">Contact Us</a></li>
+                        <li><a href="">Our Work</a></li>
              	 	</ul>
-             	</nav>
+                </nav>
+
+
+             	
              	<!--END #mainMenu -->	
 			</header>
 
@@ -42,19 +45,29 @@
 			<!--BEGIN.content-->
 			<div class="content">
 
+            <div id="out-container">
+
+
 				<h1><a href="#">Civic Beat Press</a></h1>
 
+            <script>
+            var myCountdown1 = new Countdown({time:316});
+            </script>
 
-         	<div class="kickstarvideo">
-                <iframe width="640" height="480" src="http://www.kickstarter.com/projects/845319788/ignite-the-schwa-fire/widget/video.html" frameborder="0" scrolling="no"> </iframe>
+
+         	<div class="kickstartervideo">
+                <iframe width="640" height="240" src="http://www.kickstarter.com/projects/845319788/ignite-the-schwa-fire/widget/video.html" frameborder="0" scrolling="no"> </iframe>
          	</div>
+
+
+
+            </div>
+
 
          	<!--END  kickstarterbanner-->
 
          	<!--BEGIN #blurb-->
-             <script>
-            var myCountdown1 = new Countdown({time:316});
-            </script>
+            
 
          	<div id="blurb">
          		<p>
@@ -65,19 +78,36 @@
 
          	<!--BEGIN #homeBoxes-->
 
-            <div class="container">
+            <div class="slide">
 
-         	<div id="home-box1">
+         	<div id="slide1" data-home-box="1" data-stellar-background-ratio="0.5">
+                <a class="button" data-slide="2" title=""></a>
+
+
+
+
+                                 <h2 style="width:500px;float:right"> Learn Chinese the Meme Way</h2>
+                    <img src="images/niubi.jpg" alt="bookcover" class="alignleft" >
+                                 <p style="width:500px;float:right">Learn Chinese theMeme Way is an invitation to learn about contemporary Chinese language, society and politics through the lens of the country's lively and thriving internet culture. Peer into the worlds of Sina Weibo, Douban, Renren and other social networks to discover the puns, photos and odd assortment of animals battling for free expression on the internet. From the secret dwelling places of the Grass Mud Horse to the flying pigs of Shanghai's Huangpu river, the Chinese internet is rich with creative expression.</p><div style="clear:both"></div>
+                </div>
+
+                    <!-- <h2> Learn Chinese the Meme Way</h2>
+                    <img src="images/niubi.jpg" alt="bookcover" class="alignleft" >
+                                 <p style="float:right;">Learn Chinese theMeme Way is an invitation to learn about contemporary Chinese language, society and politics through the lens of the country's lively and thriving internet culture. Peer into the worlds of Sina Weibo, Douban, Renren and other social networks to discover the puns, photos and odd assortment of animals battling for free expression on the internet. From the secret dwelling places of the Grass Mud Horse to the flying pigs of Shanghai's Huangpu river, the Chinese internet is rich with creative expression.</p><div style="clear:both"></div>
+                 </div> -->
+
          		
-         			<h2> Learn Chinese the Meme Way</h2>
+         			<!--<h2> Learn Chinese the Meme Way</h2>
                     <img src="images/niubi.jpg" alt="bookcover" class="alignleft" >
          			<p>Learn Chinese theMeme Way is an invitation to learn about contemporary Chinese language, society and politics through the lens of the country's lively and thriving internet culture. Peer into the worlds of Sina Weibo, Douban, Renren and other social networks to discover the puns, photos and odd assortment of animals battling for free expression on the internet. From the secret dwelling places of the Grass Mud Horse to the flying pigs of Shanghai's Huangpu river, the Chinese internet is rich with creative expression.</p>
-         	</div>
+         	</div>-->
             </div>
 
-             <div class="container">
+             <div class="slide">
 
-             <div id="home-box2">
+             <div id="slide2" data-slide="2" data-stellar-background-ratio="0.5">
+                <a class="button" data-slide="3" title=""></a>
+
          		
          			<h2>Meet our Makers</h2>
 
@@ -97,48 +127,53 @@
                 </div>
 
 
-                <div class="container">
+                <div class="slide">
 
-         		<div id="home-box3">
+         		<div id="slide3">
+                <div id="wrapper">
+
+                <!--<a class="button" data-slide="2" title=""></a>
+
          			<h2>Media Exposure</h2>
 
                     <p>We do have a bias and a point of view. More often than not, we side with underrepresented people and groups rather than with those who have access to structures of power. We’re proponents of internet freedom and open source, Creative Commons initiatives. We support gay marriage and women’s rights but think there’s a great deal more to be done to promote social, economic and political equality. Our writers and researchers come from different backgrounds and cultures, but we strive as much as possible to represent all sides equally, so long as those sides are backed by research and not hate or misrepresentation.
 
                     But most of all, we believe that humor, joy and creativity are a valid and necessary form of civic expression. The world can be a serious place, but we shouldn’t overlook the power of humor and creative expression in igniting a discussion or changing a person’s mind or simply helping us get through a difficult situation.
 
-                    </p>
+                    </p>-->
+                    <img src="images/tumblr.png" alt="tumblr1" data-stella-ratio="1.4">
+                    <img src="images/tumblr_1280.jpg" alt="tumblr2" data-stellar-ratio="1.5">
+                    <img src="images/tumblr_500.png" alt="tumblr3" data-stellar-ratio="2.7">
+                </div>
          		</div>
                 </div>
 
 
-            
          	<!-- END #homeBoxes-->
 
             <!--BEGIN.#socialMedia-->
 
-            <aside id="sidebar1"> 
-
-            <div id="social-media">
-                <ul>
-                    <li class="tumblr"><a href="#">Tumblr</a></li>
-                    <li class="facebook"><a href="#">Facebook</a></li>
-                    <li class="rss"><a href="#">RSS</a></li>
-                </ul>
-            </div>  
-
-            </aside>
+           
             <!--END #socialMedia-->
 
          	<div class="clear"></div>
 
          	</div><!--END.content-->
-         	</div><!-- #out-container --> 
+         	<!-- #out-container --> 
 
 
 
      		<footer>
-				&copy; Footer Goes Here
+
+				  <div id="social-media">
+                <ul>
+                    <li class="tumblr"><a href="#">Tumblr</a></li>
+                    <li class="facebook"><a href="#">Facebook</a></li>
+                    <li class="rss"><a href="#">RSS</a></li>
+                </ul>
+                    </div>  
+
 			</footer>
-		</div><!--#wrapper -->
+            
 	</body>
 </html>

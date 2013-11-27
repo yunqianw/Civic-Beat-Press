@@ -44,10 +44,13 @@ Author: Yunqian Wang
 
 body {
      font-family: "Linux Libertine",Times, serif;
+     width:100%;
+     height:100%;
      font-size: 16px;
      color: #414042;
      background:url(../images/brick.png);
      background-repeat:repeat;
+
 }
 
 a {
@@ -61,14 +64,26 @@ a {
 
 
 
+
 h1{
      background:url(../images/TheCivicBeatPress.png) no-repeat;
-     margin-top: 50px;
+     position:fixed;
+     top:50%;
+     left:50%;
+     width:600px;
+     height:60px;
      text-align: center;
      text-indent: -9999em;
+     margin-top:-41px;
+     margin-left:-223px;
+     z-index:1;
+     /*margin-top: 50px;
+     text-align: center;
+     text-indent: -9999em;
+     width:600px;
+     height:60px;*/
 
 }
-
 
 h2 {
   font-size: 1.5em;
@@ -84,6 +99,9 @@ p{
   margin:0,0,15px,0;
 
 }
+
+
+
 /******************************************
 /* HEADER             
 /*******************************************/
@@ -95,63 +113,98 @@ p{
 /* LAYOUT                   
 /*******************************************/
 
-#wrapper {
-
+/* #wrapper {
      background:url(../images/bg_wrapper.png) repeat-x;
-}
 
+
+}*/
 
 
 /* Center the container */
 
-
 #out-container{
-     margin:0 auto;
-     width:960px;
-     
-
-     /*width:100%;
-     margin:500px,auto;*/
-}
-
-.container {
+     width: 960px;
      margin: 0 auto;
+     
+}     
+
+
+
+
+.slide {
+     background-attachment: fixed;
+     width:100%;
+     height:100%;
+     position: relative;
+     box-shadow:inset 0px 10px 10px rgba(0,0,0,0.3);
+     /*margin: 0 auto;
 	width: 960px;
-     background-color:white;
+     background-color:white;*/
 }
 
-
-
-#home-box1{
-
+#wrapper{
      width:960px;
-     margin:0px auto;
-     background-color:black;
-    
+     height:200px;
+     margin:0 auto;
+     position:relative;
+
 }
 
-#home-box1.img {
+
+#slide1{
+
+     background:url(../images/brickblue.png)
+}
+
+#slide1.img {
+     position:absolute;
      min-width: 100%;
      max-height:auto;
 
 }
 
-#home-box2{
+#slide2{
 
-     width:960px;
-     margin:0px auto;
-     background-color:purple;
+     background:url(../images/water.png);
+
     
 }
 
 
-#home-box3{
+#slide3{
 
-     width:960px;
-     margin:0px auto;
-     background-color:red;
+     background-color:yellow;
     
 }
+
+#slide3 img.tumblr1{
+     position:absolute;
+     top:700px;
+     left:300px;
+
+}
+
+#slide3 img.tumblr2{
+     position:absolute;
+     top:100px;
+     left:100px;
+}
+
+
+#slide3 img.tumblr3{
+     position:absolute;
+     top:100px;
+     left:100px;
+
+}
+
+
+
+
+
+}
+
+
 
 #sidebar1{
      width:200px;
@@ -170,18 +223,43 @@ footer {
 
 /*****************************/         
 /*  NAVIGATION     *
-/*****************************/   
+/*****************************/ 
+
+
+nav ul{
+     position: fixed;
+     top: 0px;
+     background-color: black;
+     width:100%;
+     height:40px;
+     z-index: 1;
+
+     
+
+}
+
 
 nav ul li{
      float:left;
      margin-right: 10px;
+     -webkit-box-shadow:0px 0px 8px 0px #000000;
+     -moz-box-shadow:0px 0px 8px 0px #000000;
+     box-shadow: 0px 0px 8px 0px #000000;
+     -webkit-transition:all .2s ease-in-out;
+
 }
+
+nav li:hover,
+.acitve{
+     cursor:pointer;
+}
+
 
 nav ul li a {
           display: block;
-          height:49px;
+          height:10px;
           color:#ccc;
-          padding:36px 18px 0 18px;
+          padding:20px 20px;
           font-size:17px;
      
      }
@@ -189,7 +267,8 @@ nav ul li a {
 nav ul li a:hover {
           text-decoration:none;
           background:url(../images/bg_nav_rollover.png) repeat-x;
-          color:#96DDFC;
+          color:#442fff;
+          /*#96DDFC;*/
      }
 
 
@@ -200,14 +279,15 @@ nav ul li a:hover {
 /* SOCIAL MEDIA      
 /*******************************************/
 #social-media{
-     float:right;
+     float:right; 
+     top:0px;
          
 }
 
 #social-media ul li{
      float:left;
-     background:url(../images/socialNav1.png);
-     margin:3px;
+     margin-right: 10px; 
+     background:url(../images/socialNav1.png) no-repeat;
      text-indent:100%;
      white-space:nowrap;
      overflow: hidden;
@@ -215,32 +295,32 @@ nav ul li a:hover {
 
 #social-media ul li a {
      display:block;
-     width: 45px;
+     width: 48px;
      height:59px;
 }
 
 #social-media ul li.tumblr{
-     background-position:0px 59px;
+     background-position:0px -51px;
 }
 
 #social-media ul li.facebook{
-     background-position:-60px 59px;
+     background-position:-60px -51px;
 }
 
 #social-media ul li.rss{
-     background-position:-118px 59px;
+     background-position:-118px -51px;
 }
 
 #social-media ul li.tumblr:hover{
-     background-position:0px 0px;
+     background-position:0px 10px;
 }
 
 #social-media ul li.facebook:hover{
-     background-position:-60px 0px;
+     background-position:-60px 10px;
 }
 
 #social-media ul li.rss:hover{
-     background-position:-118px 0px;
+     background-position:-118px 10px;
 }
 
 
