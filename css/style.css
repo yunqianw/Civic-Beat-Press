@@ -129,6 +129,35 @@ p{
 } */
 
 
+#stage_jbeeb_3{
+
+     position: absolute！important;
+     margin-top: 100px; 
+
+}
+
+#video{
+
+     margin:0px auto;
+     width:540px;
+     margin-top: 100px;
+
+}
+
+#blurb{
+
+     width:1000px;
+     background-color: white;
+     height:50px;
+     margin:0px auto;
+     font-size:18px; 
+     
+     
+}
+
+#blurb p {
+          margin:0;
+     }
 
 
 
@@ -200,10 +229,6 @@ p{
 }
 
 
-
-
-
-}
 
 
 
