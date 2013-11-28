@@ -122,11 +122,12 @@ p{
 
 /* Center the container */
 
-#out-container{
-     width: 960px;
+/*#container{
      margin: 0 auto;
+     width: 960px; 
      
-}     
+} */
+
 
 
 
