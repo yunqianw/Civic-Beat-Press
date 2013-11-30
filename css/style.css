@@ -88,6 +88,9 @@ h1{
 h2 {
   font-size: 1.5em;
   margin: 0.83em 0;
+  
+
+
 }
 
 h3 {
@@ -161,6 +164,7 @@ p{
 
 
 
+
 .slide {
      background-attachment: fixed;
      width:100%;
@@ -183,7 +187,7 @@ p{
 
 #slide1{
 
-     background:url(../images/brickblue.png)
+     background-color:#5c9900;
 }
 
 #slide1.img {
