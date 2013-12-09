@@ -63,8 +63,6 @@ a {
      }
 
 
-
-
 h1{
      background:url(../images/TheCivicBeatPress.png) no-repeat;
      position:fixed;
@@ -103,33 +101,9 @@ p{
 
 }
 
-
-
-/******************************************
-/* HEADER             
-/*******************************************/
-
-
-
-
 /******************************************
 /* LAYOUT                   
 /*******************************************/
-
-/* #wrapper {
-     background:url(../images/bg_wrapper.png) repeat-x;
-
-
-}*/
-
-
-/* Center the container */
-
-/*#container{
-     margin: 0 auto;
-     width: 960px; 
-     
-} */
 
 
 #stage_jbeeb_3{
@@ -162,8 +136,46 @@ p{
           margin:0;
      }
 
+#image-left{
+     float:left;
+     margin-right:100px;
+     width:300px;
+}
+
+#content-right{
+     float:left;
+     width:700px;
+
+}
 
 
+
+#home-box1{
+     float:left;
+     width:300px;
+     height:500px;
+     margin-right: 100px;
+     }
+
+
+#home-box2{
+     float:left;
+     width:300px;
+     height:500px;
+     margin-right: 100px;
+
+}
+
+#home-box3{
+     float:left;
+     width:300px;
+     height:500px;
+     margin-right:0px;
+}
+
+.image{
+     opacity: 0.4;
+}
 
 .slide {
      background-attachment: fixed;
@@ -177,17 +189,24 @@ p{
 }
 
 #wrapper{
-     width:960px;
-     height:200px;
-     margin:0 auto;
+     
+     height: 500px;
      position:relative;
 
 }
 
+.slideno{
+     position:absolute;
+     bottom:0px;
+     left:0px;
+     font-size:100px;
+     font-weight:bold;
+     color:rgba(255,255,255,0.3);
+}
 
 #slide1{
 
-     background-color:#5c9900;
+     background:url(../images/water.png);
 }
 
 #slide1.img {
@@ -199,9 +218,8 @@ p{
 
 #slide2{
 
-     background:url(../images/water.png);
+     background-color: #5c9900;
 
-    
 }
 
 
@@ -211,28 +229,21 @@ p{
     
 }
 
-#slide3 img.tumblr1{
+#slide3 img:first-child{
      position:absolute;
-     top:700px;
-     left:300px;
-
+top: 200px;
+left: 300px;
 }
-
-#slide3 img.tumblr2{
+#slide3 img:nth-child(2){
      position:absolute;
      top:100px;
      left:100px;
 }
-
-
-#slide3 img.tumblr3{
+#slide3 img:nth-child(3){
      position:absolute;
-     top:100px;
-     left:100px;
-
+     top:180px;
+     right:500px;
 }
-
-
 
 
 
